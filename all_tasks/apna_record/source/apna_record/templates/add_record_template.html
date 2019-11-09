@@ -1,0 +1,20 @@
+<center><h2>Apna Record</h2></center>
+<center><h4>Add Record :</h4></center>
+
+<form action="/myapi/insert-record" method="POST">
+    <label for="name">Name: </label>&nbsp;&nbsp;
+    <input id="name" type="text" name="name" value="{{ name }}"><br><br>
+    <label for="roll_num">Roll Number: </label>&nbsp;&nbsp;
+    <input id="roll_num" type="number" name="roll_num" value="{{ roll_num }}"><br><br>
+    <label for="age">Age: </label>&nbsp;&nbsp;
+    <input id="age" type="number" name="age" value="{{ age }}"><br><br>
+    <label for="gender">Gender: </label>&nbsp;&nbsp;
+    <input type="radio" name="gender" value="Male"> Male&nbsp;&nbsp;
+    <input type="radio" name="gender" value="Female"> Female&nbsp;&nbsp;
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/myapi/show-records">
+    <input type="submit" value="List All Records">
+</form>    

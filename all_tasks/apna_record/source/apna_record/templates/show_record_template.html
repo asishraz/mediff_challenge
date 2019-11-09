@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<center><h3><u>All the Records</u></h3></center><br><br>
+<center>{{ loaded_data | safe}}</center>
+
+<br>
+<center>
+    <form action="/myapi/insert-record">
+        <input type="submit" value="Enter More Record">
+    </form>    
+</center>
+
+</body>
+</html>
+
+
